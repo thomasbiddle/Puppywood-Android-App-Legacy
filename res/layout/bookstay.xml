@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#ffffff"
+	    android:orientation="vertical" >
+	
+	    <ImageView
+	        android:contentDescription="@string/logoDescription"
+	        android:id="@+id/bookStayLogo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:src="@drawable/puppywood" />
+	
+	    <TextView
+	        android:id="@+id/bookStayMoto"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/bookStayLogo"
+	        android:layout_centerHorizontal="true"
+	        android:paddingBottom="60dp"
+	        android:text="@string/pwoodMoto"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />"
+	    
+			 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				        android:id="@+id/containAll"
+				        android:layout_centerHorizontal="true"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_below="@+id/bookStayMoto"
+				        android:orientation="horizontal" >
+			    
+				    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				        android:id="@+id/linearLeft"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:orientation="vertical" >
+			
+						<Button
+						    android:id="@+id/existingAccountBut"
+						    android:layout_width="wrap_content"
+						    android:layout_height="73dp"
+						    android:height="100dp"
+						    android:onClick="existingAccount"
+						    android:text="Existing Customer"
+						    android:width="100dp" />
+			
+				    </LinearLayout>
+		
+				    <LinearLayout
+				        xmlns:android="http://schemas.android.com/apk/res/android"
+				        android:id="@+id/linearRight"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:orientation="vertical" >
+						        <Button
+				            android:id="@+id/newAccountBut"
+				            android:layout_width="wrap_content"
+				            android:layout_height="73dp"
+				            android:height="100dp"
+				            android:onClick="newAccount"
+				            android:text="New Customer"
+				            android:width="100dp" />
+
+				    </LinearLayout>
+		 
+				</LinearLayout>
+ 	 
+		</RelativeLayout>
+
+</LinearLayout>

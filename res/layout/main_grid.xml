@@ -1,0 +1,56 @@
+<com.thomasbiddle.puppywood.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="#ffffff" >
+    
+	<!--  Book a Stay Button -->
+    <Button
+        android:id="@+id/btn_bookstay"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/book"
+        android:onClick="bookStay"
+        android:text="Book a Stay" />
+    
+	<!-- Contact Us Button -->
+    <Button
+        android:id="@+id/btn_contact"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/contact"
+        android:onClick="contactUs"
+        android:text="Contact Us" />
+    
+	<!--  Gallery Button 
+    <Button
+        android:id="@+id/btn_gallery"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/gallery"
+        android:onClick="viewGallery"
+        android:text="Gallery" />-->
+	
+    <!--  Website Button -->
+    <Button
+        android:id="@+id/btn_website"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/website"
+        android:onClick="visitWebsite"
+        android:text="Website" />
+
+    <!--  Webcam Button -->
+    <Button
+        android:id="@+id/btn_webcam"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/webcam"
+        android:onClick="viewWebcams"
+        android:text="Webcams" />
+    
+    <Button
+        android:id="@+id/blank"
+        style="@style/DashboardButton" />
+    
+    <Button
+        android:id="@+id/blank"
+        style="@style/DashboardButton" />
+
+</com.thomasbiddle.puppywood.DashboardLayout>

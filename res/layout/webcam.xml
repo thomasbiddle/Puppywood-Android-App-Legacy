@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+         <ImageView
+             android:id="@+id/contactLogo"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:contentDescription="@string/logoDescription"
+             android:src="@drawable/puppywood" />
+	
+	    <TextView
+	        android:id="@+id/contactMoto"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:paddingBottom="40dp"
+	        android:text="@string/pwoodMoto"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />"
+    
+    <Spinner
+            android:id="@+id/Spinner_Webcam"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:entries="@array/webcamlist" >
+        </Spinner>
+        
+	<Button
+			 android:id="@+id/button1"
+			 android:layout_width="wrap_content"
+			 android:layout_height="wrap_content"
+			 android:onClick="goToCamera"
+			 android:layout_gravity="center"
+			 android:text="View Webcam" />
+    
+
+</LinearLayout>

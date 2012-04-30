@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, PuppyWood!</string>
+    <string name="app_name">Puppywood</string>
+    <string name="bigImageContentDescription">Larger Picture</string>
+    <string name="pwoodMoto">Cincinnati\'s Premier Dog Boarding Resort!</string>
+    <string name="logoDescription">Puppywoods Logo</string>
+	<string-array name="feedbackgenderlist">
+		<item>Male</item>
+		<item>Female</item>
+	</string-array>
+	<string-array name="feedbackfixedlist">
+		<item>Spayed/Neutered</item>
+		<item>NOT Spayed/Neutered</item>
+	</string-array>
+	<string-array name="webcamlist">
+		<item>Quad Camera 1</item>
+		<item>Camera 1</item>
+		<item>Camera 2</item>
+		<item>Camera 3</item>
+		<item>Camera 4</item>
+		<item>Quad Camera 2</item>
+		<item>Camera 5</item>
+		<item>Camera 6</item>
+		<item>Camera 7</item>
+		<item>Camera 8</item>
+	</string-array>
+</resources>
