@@ -45,8 +45,8 @@ public class Mail extends javax.mail.Authenticator {
     _port = "465"; // default smtp port 
     _sport = "465"; // default socketfactory port 
  
-    _user = "puppywoodapp@gmail.com"; // username 
-    _pass = "pwood4892275"; // password 
+    _user = ""; // username 
+    _pass = ""; // password 
     _from = ""; // email sent from 
     _subject = ""; // email subject 
     _body = ""; // email body 
