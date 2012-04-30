@@ -14,11 +14,6 @@ public class Puppywood extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
     }
-    public void viewGallery(View v)
-    {
-    	Intent intent = new Intent().setClass(Puppywood.this, GalleryActivity.class);
-    	startActivity(intent);  	
-    }
     public void viewWebcams(View v) {
     	Intent intent = new Intent().setClass(this, WebcamActivity.class);
     	startActivity(intent);
