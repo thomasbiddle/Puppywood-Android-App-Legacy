@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="hello">Hello World, PuppyWood!</string>
     <string name="app_name">Puppywood</string>
-    <string name="bigImageContentDescription">Larger Picture</string>
     <string name="pwoodMoto">Cincinnati\'s Premier Dog Boarding Resort!</string>
     <string name="logoDescription">Puppywoods Logo</string>
 	<string-array name="feedbackgenderlist">

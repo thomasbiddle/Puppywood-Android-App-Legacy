@@ -35,7 +35,7 @@ public class ContactActivity extends Activity {
     public void linkDialNumber(View v)
     {
     	try{
-    	Intent it = new Intent(Intent.ACTION_CALL);
+    	Intent it = new Intent(Intent.ACTION_DIAL);
     	it.setData(Uri.parse("tel:5134892275"));
     	startActivity(it);
     	} catch (Exception e) {

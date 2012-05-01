@@ -13,6 +13,20 @@ public class Puppywood extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        
+        /*
+        
+        I'll implement ABS later.
+        
+	        ColorDrawable d = new ColorDrawable(0xff73BE42);
+	        
+	        final ActionBar ab = getSupportActionBar();
+	        
+	        ab.setDisplayShowHomeEnabled(true);
+	        ab.setBackgroundDrawable(d);
+        */
+        
+
     }
     public void viewWebcams(View v) {
     	Intent intent = new Intent().setClass(this, WebcamActivity.class);

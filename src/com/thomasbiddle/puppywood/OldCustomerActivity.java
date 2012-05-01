@@ -106,15 +106,15 @@ public class OldCustomerActivity extends Activity {
    	    try {
    	    	// Execute HTTP Post Request    	    	
    	    	DefaultHttpClient httpclient = new DefaultHttpClient();
-   	    	String info = "name=" + URLEncoder.encode(nameValue) + 
-						"&email=" + URLEncoder.encode(emailValue) + 
-						"&petname=" + URLEncoder.encode(petsnameValue) +
-						"&arrivaldate=" + URLEncoder.encode(arrivalDateValue) +
-						"&departdate=" + URLEncoder.encode(departDateValue) +
-						"&meds=" + URLEncoder.encode(medicationValue) +
-						"&feeding=" + URLEncoder.encode(feedingValue) +
-						"&grooming=" + URLEncoder.encode(groomingValue) +
-						"&other=" + URLEncoder.encode(otherValue);
+   	    	String info = "name=" + URLEncoder.encode(nameValue, "UTF-8") + 
+						"&email=" + URLEncoder.encode(emailValue, "UTF-8") + 
+						"&petname=" + URLEncoder.encode(petsnameValue, "UTF-8") +
+						"&arrivaldate=" + URLEncoder.encode(arrivalDateValue, "UTF-8") +
+						"&departdate=" + URLEncoder.encode(departDateValue, "UTF-8") +
+						"&meds=" + URLEncoder.encode(medicationValue, "UTF-8") +
+						"&feeding=" + URLEncoder.encode(feedingValue, "UTF-8") +
+						"&grooming=" + URLEncoder.encode(groomingValue, "UTF-8") +
+						"&other=" + URLEncoder.encode(otherValue, "UTF-8");
        	    HttpPost httppost = new HttpPost("http://thomasbiddle.com/puppywood/puppywoodMailExisting.php?" + info);
    	    	
 	            httpclient.execute(httppost);

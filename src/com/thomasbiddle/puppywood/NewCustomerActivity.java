@@ -135,22 +135,22 @@ public class NewCustomerActivity extends Activity {
 	   	    try {
 	   	    	// Execute HTTP Post Request    	    	
 	   	    	DefaultHttpClient httpclient = new DefaultHttpClient();
-	   	    	String info = "name=" + URLEncoder.encode(nameValue) + 
-							"&email=" + URLEncoder.encode(emailValue) + 
-							"&address=" + URLEncoder.encode(addressValue) +
-							"&number=" + URLEncoder.encode(phoneValue) +
-							"&petbreed=" + URLEncoder.encode(petsbreedValue) +
-							"&gender=" + URLEncoder.encode(petsgenderValue) +
-							"&petname=" + URLEncoder.encode(petsnameValue) +
-							"&fixedstatus=" + URLEncoder.encode(fixedStatusValue) +
-							"&vetname=" + URLEncoder.encode(vetNameValue) +
-							"&vetphone=" + URLEncoder.encode(vetPhoneValue) +
-							"&arrivaldate=" + URLEncoder.encode(arrivalDateValue) +
-							"&departdate=" + URLEncoder.encode(departDateValue) +
-							"&meds=" + URLEncoder.encode(medicationValue) +
-							"&feeding=" + URLEncoder.encode(feedingValue) +
-							"&grooming=" + URLEncoder.encode(groomingValue) +
-							"&other=" + URLEncoder.encode(otherValue);
+	   	    	String info = "name=" + URLEncoder.encode(nameValue, "UTF-8") + 
+							"&email=" + URLEncoder.encode(emailValue, "UTF-8") + 
+							"&address=" + URLEncoder.encode(addressValue, "UTF-8") +
+							"&number=" + URLEncoder.encode(phoneValue, "UTF-8") +
+							"&petbreed=" + URLEncoder.encode(petsbreedValue, "UTF-8") +
+							"&gender=" + URLEncoder.encode(petsgenderValue, "UTF-8") +
+							"&petname=" + URLEncoder.encode(petsnameValue, "UTF-8") +
+							"&fixedstatus=" + URLEncoder.encode(fixedStatusValue, "UTF-8") +
+							"&vetname=" + URLEncoder.encode(vetNameValue, "UTF-8") +
+							"&vetphone=" + URLEncoder.encode(vetPhoneValue, "UTF-8") +
+							"&arrivaldate=" + URLEncoder.encode(arrivalDateValue, "UTF-8") +
+							"&departdate=" + URLEncoder.encode(departDateValue, "UTF-8") +
+							"&meds=" + URLEncoder.encode(medicationValue, "UTF-8") +
+							"&feeding=" + URLEncoder.encode(feedingValue, "UTF-8") +
+							"&grooming=" + URLEncoder.encode(groomingValue, "UTF-8") +
+							"&other=" + URLEncoder.encode(otherValue, "UTF-8");
 	       	    HttpPost httppost = new HttpPost("http://thomasbiddle.com/puppywood/puppywoodMailNew.php?" + info);
 	   	    	
 		            httpclient.execute(httppost);
