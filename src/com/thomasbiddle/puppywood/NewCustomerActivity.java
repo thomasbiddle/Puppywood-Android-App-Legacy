@@ -151,7 +151,7 @@ public class NewCustomerActivity extends Activity {
 							"&feeding=" + URLEncoder.encode(feedingValue, "UTF-8") +
 							"&grooming=" + URLEncoder.encode(groomingValue, "UTF-8") +
 							"&other=" + URLEncoder.encode(otherValue, "UTF-8");
-	       	    HttpPost httppost = new HttpPost("http://thomasbiddle.com/puppywood/puppywoodMailNew.php?" + info);
+	       	    HttpPost httppost = new HttpPost("http://puppywood.com/mobile_app/puppywoodMailNew.php?" + info);
 	   	    	
 		            httpclient.execute(httppost);
 		            return true;

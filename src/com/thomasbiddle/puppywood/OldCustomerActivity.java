@@ -115,7 +115,7 @@ public class OldCustomerActivity extends Activity {
 						"&feeding=" + URLEncoder.encode(feedingValue, "UTF-8") +
 						"&grooming=" + URLEncoder.encode(groomingValue, "UTF-8") +
 						"&other=" + URLEncoder.encode(otherValue, "UTF-8");
-       	    HttpPost httppost = new HttpPost("http://thomasbiddle.com/puppywood/puppywoodMailExisting.php?" + info);
+       	    HttpPost httppost = new HttpPost("http://puppywood.com/mobile_app/puppywoodMailExisting.php?" + info);
    	    	
 	            httpclient.execute(httppost);
 	            return true;
