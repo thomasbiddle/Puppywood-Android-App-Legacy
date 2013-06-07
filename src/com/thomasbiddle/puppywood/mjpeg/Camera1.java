@@ -7,7 +7,7 @@ import android.view.WindowManager;
 
 public class Camera1 extends Activity {
 	private MjpegView mv;
-	private String URL = "http://puppywood.mypets.ws/mjpg/1/video.mjpg";
+	private String URL = "http://puppywood.dyndns.org/mjpg/1/video.mjpg";
 	
 	public void startCam() {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
