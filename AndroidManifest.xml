@@ -40,6 +40,10 @@
         <activity android:label="@string/app_name" android:name=".cameras.Camera8"/>
         <activity android:label="@string/app_name" android:name=".cameras.CameraQuad1"/>
         <activity android:label="@string/app_name" android:name=".cameras.CameraQuad2"/>
+        <activity android:label="@string/app_name" android:name=".cameras.BeechmontCamera1"/>
+        <activity android:label="@string/app_name" android:name=".cameras.BeechmontCamera2"/>
+        <activity android:label="@string/app_name" android:name=".cameras.BeechmontCamera3"/>
+        <activity android:label="@string/app_name" android:name=".cameras.BeechmontCamera4"/>
         
     </application>
 

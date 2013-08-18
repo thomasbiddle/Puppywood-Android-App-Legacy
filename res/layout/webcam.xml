@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical" >
          <ImageView
              android:id="@+id/contactLogo"
@@ -18,6 +18,14 @@
 	        android:layout_gravity="center"
 	        android:paddingBottom="40dp"
 	        android:text="@string/pwoodMoto"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	    
+	    <TextView
+	        android:id="@+id/montgomeryCameraTextView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:text="Montgomery Webcams"
 	        android:textAppearance="?android:attr/textAppearanceSmall" />
     
     <Spinner
@@ -36,6 +44,31 @@
 			 android:onClick="goToCamera"
 			 android:layout_gravity="center"
 			 android:text="View Webcam" />
+	
+	    <TextView
+	        android:id="@+id/beechmontCameraTextView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:paddingTop="15dp"
+	        android:text="Beechmont Webcams"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
     
+    <Spinner
+            android:id="@+id/beechmontWebcamSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:entries="@array/beechmontWebCams" >
+        </Spinner>
+        
+	<Button
+			 android:id="@+id/beechmontCameraButton"
+			 android:layout_width="wrap_content"
+			 android:layout_height="wrap_content"
+			 android:onClick="startBeechmontCamera"
+			 android:layout_gravity="center"
+			 android:text="View Webcam" />
 
 </LinearLayout>
