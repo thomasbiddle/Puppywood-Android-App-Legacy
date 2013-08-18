@@ -4,6 +4,8 @@
     <string name="app_name">Puppywood</string>
     <string name="pwoodMoto">Cincinnati\'s Premier Dog Boarding Resort!</string>
     <string name="logoDescription">Puppywoods Logo</string>
+    <string name="long_logo_description">Puppywood Logo</string>
+    <string name="latest_tweets">\@Puppywood</string>
 	<string-array name="feedbackgenderlist">
 		<item>Male</item>
 		<item>Female</item>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+    
+    <Spinner
+    android:id="@+id/menu_spinner"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMainFeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" 
+     >
+
+        <ImageView 
+        	android:id="@+id/twitterLogo"
+        	android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        	android:src="@drawable/twitter"
+        />
+
+        <TextView 
+            android:id="@+id/textViewLatestTweets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@+string/latest_tweets"
+        />
+        
+    </LinearLayout>
+    
+</ScrollView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu_array">
+        <item>Home</item>
+        <item>Book a Stay</item>
+        <item>Webcams</item>
+        <item>Website</item>
+    </string-array>
+</resources>
