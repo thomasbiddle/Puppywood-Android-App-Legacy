@@ -6,16 +6,6 @@ import android.view.View;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-
-/*
- * 
- * 
- * This class doesn't really have anything - Just code I was playing
- * around with!
- * 
- * 
- */
-
 public class WebcamActivity extends Activity {
     /** Called when the activity is first created. */
     @Override
@@ -29,86 +19,45 @@ public class WebcamActivity extends Activity {
     	String currentWebcam = sp.getSelectedItem().toString();
     	Toast t = Toast.makeText(getApplicationContext(), currentWebcam, Toast.LENGTH_SHORT);
     	t.show();
+    	Intent intent = new Intent();
+    	// Can't have just an uninstantiated class, setting it to base to begin will re-set it
+    	// base on the selection below.
+    	Class cameraClass = com.thomasbiddle.puppywood.cameras.CameraBase.class;
+
+    	// WTF Java - You didn't implement switch conditionals by string until JDK7?!
+    	// Using If/ElseIf for backwards compatibility.
     	if (currentWebcam.equalsIgnoreCase("Quad Camera 1")) {
-    		Intent intent = new Intent().setClass(this, com.thomasbiddle.puppywood.mjpeg.CameraQuad1.class);
-    		startActivity(intent);
+    		cameraClass = com.thomasbiddle.puppywood.cameras.CameraQuad1.class;
     	}
     	else if(currentWebcam.equalsIgnoreCase("Quad Camera 2")) {
-    		Intent intent = new Intent().setClass(this, com.thomasbiddle.puppywood.mjpeg.CameraQuad2.class);
-        	startActivity(intent);
+    		cameraClass = com.thomasbiddle.puppywood.cameras.CameraQuad2.class;
     	}
 		else if(currentWebcam.equalsIgnoreCase("Camera 1")) {
-			Intent intent = new Intent().setClass(this, com.thomasbiddle.puppywood.mjpeg.Camera1.class);
-	    	startActivity(intent);
+			cameraClass = com.thomasbiddle.puppywood.cameras.Camera1.class;
 		}
 		else if(currentWebcam.equalsIgnoreCase("Camera 2")) {
-			Intent intent = new Intent().setClass(this, com.thomasbiddle.puppywood.mjpeg.Camera2.class);
-	    	startActivity(intent);
+			cameraClass = com.thomasbiddle.puppywood.cameras.Camera2.class;
 		}
 		else if(currentWebcam.equalsIgnoreCase("Camera 3")) {
-			Intent intent = new Intent().setClass(this, com.thomasbiddle.puppywood.mjpeg.Camera3.class);
-	    	startActivity(intent);
+			cameraClass = com.thomasbiddle.puppywood.cameras.Camera3.class;
 		}
 		else if(currentWebcam.equalsIgnoreCase("Camera 4")) {
-			Intent intent = new Intent().setClass(this, com.thomasbiddle.puppywood.mjpeg.Camera4.class);
-	    	startActivity(intent);
+			cameraClass = com.thomasbiddle.puppywood.cameras.Camera4.class;
 		}
 		else if(currentWebcam.equalsIgnoreCase("Camera 5")) {
-			Intent intent = new Intent().setClass(this, com.thomasbiddle.puppywood.mjpeg.Camera5.class);
-	    	startActivity(intent);
+			cameraClass = com.thomasbiddle.puppywood.cameras.Camera5.class;
 		}
 		else if(currentWebcam.equalsIgnoreCase("Camera 6")) {
-			Intent intent = new Intent().setClass(this, com.thomasbiddle.puppywood.mjpeg.Camera6.class);
-	    	startActivity(intent);
+			cameraClass = com.thomasbiddle.puppywood.cameras.Camera1.class;
 		}
 		else if(currentWebcam.equalsIgnoreCase("Camera 7")) {
-			Intent intent = new Intent().setClass(this, com.thomasbiddle.puppywood.mjpeg.Camera7.class);
-	    	startActivity(intent);
+			cameraClass = com.thomasbiddle.puppywood.cameras.Camera7.class;
 		}
 		else if(currentWebcam.equalsIgnoreCase("Camera 8")) {
-			Intent intent = new Intent().setClass(this, com.thomasbiddle.puppywood.mjpeg.Camera8.class);
-	    	startActivity(intent);
+			cameraClass = com.thomasbiddle.puppywood.cameras.Camera8.class;
 		}
-    }
-    
-    public void startCam1(View v) {
-    	Intent intent = new Intent().setClass(this, com.thomasbiddle.puppywood.mjpeg.Camera1.class);
+    	intent.setClass(this, cameraClass);
     	startActivity(intent);
-    }
-    
-    public void startCam2(View v) {
-    	Intent intent = new Intent().setClass(this, com.thomasbiddle.puppywood.mjpeg.Camera2.class);
-    	startActivity(intent);
-    }
-    
-    public void startCam3(View v) {
-    	Intent intent = new Intent().setClass(this, com.thomasbiddle.puppywood.mjpeg.Camera3.class);
-    	startActivity(intent);
-    }
-    
-    public void startCam4(View v) {
-    	Intent intent = new Intent().setClass(this, com.thomasbiddle.puppywood.mjpeg.Camera4.class);
-    	startActivity(intent);
-    }
-    
-    public void startCam5(View v) {
-    	Intent intent = new Intent().setClass(this, com.thomasbiddle.puppywood.mjpeg.Camera5.class);
-    	startActivity(intent);
-    }
-    
-    public void startCam6(View v) {
-    	Intent intent = new Intent().setClass(this, com.thomasbiddle.puppywood.mjpeg.Camera6.class);
-    	startActivity(intent);
-    }
-    
-    public void startQuad1(View v) {
-    	Intent intent = new Intent().setClass(this, com.thomasbiddle.puppywood.mjpeg.CameraQuad1.class);
-    	startActivity(intent);
-    }
-    
-    public void startQuad2(View v) {
-    	Intent intent = new Intent().setClass(this, com.thomasbiddle.puppywood.mjpeg.CameraQuad2.class);
-    	startActivity(intent);
-    }
+    } 
    
 }
