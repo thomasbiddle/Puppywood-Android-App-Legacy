@@ -76,7 +76,7 @@ public class WebcamActivity extends Activity {
 			cameraClass = com.thomasbiddle.puppywood.cameras.Camera5.class;
 		}
 		else if(currentWebcam.equalsIgnoreCase("Camera 6")) {
-			cameraClass = com.thomasbiddle.puppywood.cameras.Camera1.class;
+			cameraClass = com.thomasbiddle.puppywood.cameras.Camera6.class;
 		}
 		else if(currentWebcam.equalsIgnoreCase("Camera 7")) {
 			cameraClass = com.thomasbiddle.puppywood.cameras.Camera7.class;
