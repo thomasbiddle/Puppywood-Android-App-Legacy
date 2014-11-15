@@ -7,8 +7,7 @@
     android:layout_height="match_parent"
     android:scrollbars="vertical">
 
-<LinearLayout 
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical" >
@@ -95,6 +94,29 @@
 			</LinearLayout>
 		     <LinearLayout
 		         android:id="@+id/contactContain4"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		   		 android:clickable="true"
+		         android:onClick="linkAddressClickedAnderson" >
+			    <ImageView
+			        android:src="@drawable/ic_action_locate"
+			        android:contentDescription="Map Icon"
+			        android:layout_marginLeft="25dp"
+			        android:layout_marginRight="7dp"
+			        android:layout_width="40dp"
+			        android:layout_height="40dp" >
+			    </ImageView>
+			    <TextView
+			        android:id="@+id/textViewAnderson"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#000000"
+			        android:textStyle="bold"
+			        android:layout_gravity="center"
+			        android:text="7863 Beechmont Ave \nCincinnati, OH 45255" />
+			</LinearLayout>
+		     <LinearLayout
+		         android:id="@+id/contactContain5"
 		         android:layout_width="wrap_content"
 		         android:layout_height="wrap_content"
 		         android:clickable="true"

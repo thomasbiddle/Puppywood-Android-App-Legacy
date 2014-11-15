@@ -32,6 +32,14 @@ public class ContactActivity extends Activity {
     	String uri = "geo:0,0?q=8175 Hetz Drive Cincinnati Ohio";
     	startActivity(new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(uri)));
     }
+    public void linkAddressClickedAnderson(View v)
+    {
+    	Context context = getApplicationContext();
+    	Toast toast = Toast.makeText(context, "Please wait while the address loads...", Toast.LENGTH_LONG);
+    	toast.show();
+    	String uri = "geo:0,0?q=7863 Beechmont Ave Cincinnati Ohio 45255";
+    	startActivity(new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(uri)));
+    }
     public void linkDialNumber(View v)
     {
     	try{
